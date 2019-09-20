@@ -102,13 +102,8 @@
 
         methods: {
             playRandom: function () {
-                this.play('button1');
-
-                const groupsKeys = Object.keys(this.sounds);
-                const group = this.sounds[groupsKeys[groupsKeys.length * Math.random() << 0]];
-
-                const sound = group[Math.floor(Math.random() * group.length)];
-                this.play(sound);
+                const sounds = Object.values(this.sounds).flat(Infinity);
+                this.play(sounds[Math.floor(Math.random() * sounds.length)]);
             },
 
             play: function (sound) {
