@@ -1,5 +1,7 @@
 # Empire Earth Soundboard
 
+https://eesoundboard.online/
+
 ## Project setup
 ```
 npm install
