@@ -74,13 +74,23 @@
                         'Scream 1',
                         'Scream 2',
                         'Scream 3',
+                        'Grigor 1',
+                        'Jester 1',
+                        'Jester 2',
+                        'Jester 3',
+                        'Jester 4',
                         'The bell tolls for thee',
                         'To Victory',
-                        'Where can I go',
+                        'Where shall I go',
+                        'William 3',
                         'Who can I kill',
                         'Yes great one',
                         'Yes me lord',
+                        'Allah wills it',
+                        'For paradise',
+                        'For the motherland',
                         'Your orders',
+                        'Certainly',
                     ],
 
                     animals: [
@@ -91,6 +101,7 @@
                     ambient: [
                         'Plague',
                         'Nuke bomb',
+                        'Building blow',
                     ],
 
                     misc: [
