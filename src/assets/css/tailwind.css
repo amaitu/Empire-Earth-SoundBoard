@@ -1,0 +1,34 @@
+@tailwind base;
+
+::-moz-selection { /* Code for Firefox */
+    color: #361005;
+    background: #E3CB80;
+}
+
+::selection {
+    color: #361005;
+    background: #E3CB80;
+}
+
+.stroke {
+    /* WebKit (Safari/Chrome) Only */
+    -webkit-text-stroke: 1px #E3CB80;
+    text-shadow: 2px 2px 0 #E3CB80,
+        /* Simulated effect for Firefox and Opera
+           and nice enhancement for WebKit */ -1px -1px 0 #E3CB80,
+    1px -1px 0 #E3CB80,
+    -1px 1px 0 #E3CB80,
+    1px 1px 0 #E3CB80;
+}
+
+@font-face {
+    font-family: 'Broadsheet LDO';
+    src: url('../fonts/BroadsheetLDOBold.woff2') format('woff2'),
+    url('../fonts/BroadsheetLDOBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@tailwind components;
+
+@tailwind utilities;

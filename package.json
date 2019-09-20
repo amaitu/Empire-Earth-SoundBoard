@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "autoprefixer": "latest"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
+    "tailwindcss": "^1.1.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
