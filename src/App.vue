@@ -3,7 +3,7 @@
 
         <header class="flex items-center ">
             <div class="flex justify-between items-center w-full">
-                <h2 class="stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
+                <h2 class="uppercase stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
                     style="font-family: 'Broadsheet LDO'">
                     Empire Earth Soundboard
                 </h2>
@@ -26,14 +26,19 @@
 
         <footer class="mt-10 flex p-10 justify-around md:justify-between text-sm">
             <div class="flex flex-col">
-                <p>Empire Earth Soundboard </p>
-                <p>by Steve Barker</p>
+                <p>Empire Earth Soundboard</p>
+                <a href="https://sgbarker.com" class="underline">by Steve Barker</a>
                 <p>ee@sgbarker.com</p>
             </div>
 
-            <div class="flex flex-col">
+            <div class="flex flex-col underline">
                 <a href="https://en.wikipedia.org/wiki/Empire_Earth_(video_game)">Empire Earth</a>
             </div>
+
+            <div class="flex flex-col underline">
+                <a href="https://www.youtube.com/watch?v=347qmxgydkE&list=PLB489C5423FD3D057">Empire Earth sound track</a>
+            </div>
+
         </footer>
     </div>
 </template>
