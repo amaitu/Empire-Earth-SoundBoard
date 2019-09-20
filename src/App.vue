@@ -107,11 +107,11 @@
             },
 
             play: function (sound) {
-                const audio = new Audio(this.urlPrefix + this.parseName(sound) + this.fileExtension);
+                const audio = new Audio(this.urlPrefix + this.flattenName(sound) + this.fileExtension);
                 audio.play();
             },
 
-            parseName: function (name) {
+            flattenName: function (name) {
                 return name.replace(/\s/g, '').toLowerCase();
             }
         },
