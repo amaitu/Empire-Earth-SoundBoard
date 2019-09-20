@@ -32,6 +32,7 @@
             </div>
 
             <div class="flex flex-col underline">
+                <a href="https://github.com/amaitu/Empire-Earth-SoundBoard">Source code</a>
                 <a href="https://en.wikipedia.org/wiki/Empire_Earth_(video_game)">Empire Earth</a>
                 <a href="https://www.youtube.com/watch?v=347qmxgydkE&list=PLB489C5423FD3D057">Empire Earth
                     soundtrack</a>
