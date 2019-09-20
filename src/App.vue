@@ -67,6 +67,7 @@
                         'Set full sail',
                         'Sink the land lubbers',
                         'SIRE',
+                        'Yeah',
                         'Scream 1',
                         'Scream 2',
                         'Scream 3',
@@ -82,6 +83,11 @@
                     animals: [
                         'Giraffe',
                         'Tiger',
+                    ],
+
+                    ambient: [
+                        'Plague',
+                        'Nuke bomb',
                     ],
 
                     misc: [
