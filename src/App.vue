@@ -3,10 +3,10 @@
 
         <header class="flex items-center ">
             <div class="flex justify-between items-center w-full">
-                <h2 class="uppercase stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
+                <h1 class="uppercase stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
                     style="font-family: 'Broadsheet LDO'">
                     Empire Earth Soundboard
-                </h2>
+                </h1>
             </div>
         </header>
 
@@ -83,7 +83,7 @@
                         'The bell tolls for thee',
                         'To Victory',
                         'Where shall I go',
-                        'William 3',
+                        // 'William 3', // not working
                         'Who can I kill',
                         'Yes great one',
                         'Yes me lord',
@@ -97,6 +97,7 @@
                     animals: [
                         'Giraffe',
                         'Tiger',
+                        'Hippo dying',
                     ],
 
                     ambient: [
