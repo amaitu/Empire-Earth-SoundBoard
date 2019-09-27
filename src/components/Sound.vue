@@ -9,8 +9,5 @@
     export default {
         name: 'Sound',
         props: ['soundName'],
-
-
-
     }
 </script>
