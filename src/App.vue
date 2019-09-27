@@ -57,7 +57,7 @@
 
         data: function () {
             return {
-                urlPrefix: 'https://ee-sounds.s3.eu-west-2.amazonaws.com/ee/',
+                urlPrefix: '/sounds/ee/',
                 fileExtension: '.wav',
                 sounds: {
                     units: [
@@ -69,6 +69,7 @@
                         'Swordsmen forward',
                         'Set full sail',
                         'Sink the land lubbers',
+                        'All hands on deck',
                         'SIRE',
                         'Yeah',
                         'Scream 1',
