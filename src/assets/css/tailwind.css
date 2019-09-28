@@ -23,6 +23,7 @@
 
 @font-face {
     font-family: 'Broadsheet LDO';
+    font-display: auto;
     src: url('../fonts/BroadsheetLDOBold.woff2') format('woff2'),
     url('../fonts/BroadsheetLDOBold.woff') format('woff');
     font-weight: bold;
