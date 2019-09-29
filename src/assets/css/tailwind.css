@@ -10,6 +10,10 @@
     background: #E3CB80;
 }
 
+.svg-button:hover {
+    fill: #E3CB80;
+}
+
 .stroke {
     /* WebKit (Safari/Chrome) Only */
     -webkit-text-stroke: 1px #E3CB80;

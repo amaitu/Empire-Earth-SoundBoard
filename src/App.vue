@@ -5,7 +5,7 @@
             <div class="flex justify-between items-center w-full">
                 <h1 class="uppercase stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
                     style="font-family: 'Broadsheet LDO'">
-                    Empire Earth Soundboard
+                    <a href="https://eesoundboard.online">Empire Earth Soundboard</a>
                 </h1>
             </div>
         </header>
@@ -24,20 +24,7 @@
             <sound-button v-on:buttonClick="playRandom" text="?"></sound-button>
         </div>
 
-        <footer class="mt-10 flex p-10 justify-around bg-black text-empire-gold-light md:justify-between text-sm lg:text-base">
-            <div class="flex flex-col text-center">
-                <p>Empire Earth Soundboard</p>
-                <a href="https://sgbarker.com" class="underline">by Steve Barker</a>
-                <p>ee@sgbarker.com</p>
-            </div>
-
-            <div class="flex flex-col underline">
-                <a href="https://github.com/amaitu/Empire-Earth-SoundBoard">Source code</a>
-                <a href="https://en.wikipedia.org/wiki/Empire_Earth_(video_game)">Empire Earth</a>
-                <a href="https://www.youtube.com/watch?v=347qmxgydkE&list=PLB489C5423FD3D057">Empire Earth
-                    soundtrack</a>
-            </div>
-        </footer>
+        <partial-footer></partial-footer>
     </div>
 </template>
 
@@ -45,11 +32,13 @@
     import Sound from "./components/Sound";
     import Subheading from "./components/Subheading";
     import SoundButton from "./components/SoundButton";
+    import PartialFooter from "./components/PartialFooter";
 
     export default {
         name: 'app',
 
         components: {
+            PartialFooter,
             SoundButton,
             Subheading,
             Sound
