@@ -2,9 +2,9 @@
     <footer class="mt-10 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
 
         <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
-            <h4 class="tracking-wide hover:text-empire-gold">Empire Earth Soundboard
+            <h4 class="tracking-wide">Empire Earth Soundboard
                 <br>
-                by Steve Barker
+                <a class="hover:text-empire-gold" href="https://sgbarker.com/">by Steve Barker</a>
             </h4>
         </div>
 
@@ -107,19 +107,6 @@
             </ul>
         </div>
     </footer>
-
-    <!--    <footer class="mt-10 flex p-10 justify-around bg-black text-empire-gold-light md:justify-between text-sm lg:text-base">-->
-    <!--        <div class="flex flex-col text-center">-->
-    <!--            <p>Empire Earth Soundboard</p>-->
-    <!--            <a href="https://sgbarker.com" class="underline">by Steve Barker</a>-->
-    <!--            <p>ee@sgbarker.com</p>-->
-    <!--        </div>-->
-    <!---->
-    <!--        <div class="flex flex-col underline">-->
-
-
-    <!--        </div>-->
-    <!--    </footer>-->
 </template>
 
 <script>

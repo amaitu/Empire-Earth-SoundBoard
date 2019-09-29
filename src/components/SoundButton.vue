@@ -14,7 +14,7 @@
         methods: {
             click: function () {
                 this.$emit('buttonClick', this.text)
-            }
+            },
         },
     }
 </script>
