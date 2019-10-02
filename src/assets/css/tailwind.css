@@ -5,6 +5,14 @@
     background: #E3CB80;
 }
 
+body {
+    background: rgb(227,227,180);
+    background: -moz-linear-gradient(180deg, rgba(227,227,180,1) 45%, rgba(227,203,128,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(227,227,180,1) 45%, rgba(227,203,128,1) 100%);
+    background: linear-gradient(180deg, rgba(227,227,180,1) 45%, rgba(227,203,128,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3b4",endColorstr="#e3cb80",GradientType=1);
+}
+
 ::selection {
     color: #361005;
     background: #E3CB80;

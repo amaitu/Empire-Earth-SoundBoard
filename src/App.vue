@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="mx-auto font-serif">
 
-        <header class="flex items-center ">
+        <header class="flex items-center">
             <div class="flex justify-between items-center w-full">
                 <h1 class="uppercase stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
                     style="font-family: 'Broadsheet LDO'">

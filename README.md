@@ -1,13 +1,6 @@
-# Empire Earth Soundboard
-https://eesoundboard.online/
+# eesoundboard
 
-## Contributing
-If you have a request for sounds, feel free to ask me or to add them yourself by opening a pull request.
-
-## Running the project locally
-
-Clone the repo, then follow these steps:
-
+## Project setup
 ```
 npm install
 ```
@@ -21,3 +14,26 @@ npm run serve
 ```
 npm run build
 ```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
