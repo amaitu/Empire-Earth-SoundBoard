@@ -6,11 +6,31 @@
 }
 
 body {
-    background: rgb(227,227,180);
-    background: -moz-linear-gradient(180deg, rgba(227,227,180,1) 45%, rgba(227,203,128,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(227,227,180,1) 45%, rgba(227,203,128,1) 100%);
-    background: linear-gradient(180deg, rgba(227,227,180,1) 45%, rgba(227,203,128,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3b4",endColorstr="#e3cb80",GradientType=1);
+    background: rgb(227, 227, 180);
+    background: -moz-linear-gradient(180deg, rgba(227, 227, 180, 1) 45%, rgba(227, 203, 128, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(227, 227, 180, 1) 45%, rgba(227, 203, 128, 1) 100%);
+    background: linear-gradient(180deg, rgba(227, 227, 180, 1) 45%, rgba(227, 203, 128, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3b4", endColorstr="#e3cb80", GradientType=1);
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.slide-up {
+    animation: slide-up 700ms;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 ::selection {
