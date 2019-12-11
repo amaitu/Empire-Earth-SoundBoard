@@ -35,16 +35,6 @@
         },
 
         data: data,
-
-        methods: {
-
-            //     playRandom: function () {
-            //         new Audio(path).play();
-            //         const sounds = Object.values(this.sounds).flat(10);
-            //         const path = this.urlPrefix + this.flatten(this.text) + this.fileExtension;
-            //         this.play(sounds[Math.floor(Math.random() * sounds.length)]);
-            //     },
-        },
     }
 
     function data() {
@@ -53,7 +43,7 @@
                 MUSIC: 'music',
                 UNIT: 'unit',
                 DIALOG: 'dialog',
-                CUSTOM: 'custom',
+                RANDOM: 'random',
             };
 
         return {
@@ -215,6 +205,7 @@
                         {label: 'What be your business?', filename: 'british1_4',},
                         {label: 'You don\'t have enough stone for that!', filename: 'een1ve1s_british1_83',},
                         {label: 'Fortify our position', filename: 'british11_77',},
+                        {label: 'Ah, a potato truck.', filename: 'future1_46',},
                     ],
                 },
 
@@ -228,10 +219,12 @@
                     ],
                 },
 
-                misc: {
-                    type: groupTypes.CUSTOM,
-                    sounds: [],
-                },
+                // misc: {
+                //     type: groupTypes.RANDOM,
+                //     sounds: [
+                //         {label: 'I\'m feeling lucky', filename: null,},
+                //     ],
+                // },
             },
         };
     }

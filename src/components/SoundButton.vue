@@ -1,7 +1,7 @@
 <template>
     <div
             v-on:click="activateButton()"
-            class="cursor-pointer hover:opacity-75 font-bold w-1/3 p-3 md:w-1/6 lg:w-1/6 lg:w-1/12 xl:w-1/12 mx-2 xl:mx-3 mb-4 h-20 rounded text-white text-sm text-center bg-black opacity-50 shadow-2xl border-yellow-200">
+            class="cursor-pointer hover:opacity-75 font-bold w-1/3 p-3 md:w-1/6 lg:w-1/6 lg:w-1/12 xl:w-1/12 mx-2 xl:mx-3 mb-4 h-24 rounded text-white text-sm md:text-base lg:text-sm text-center bg-black opacity-50 shadow-2xl border-yellow-200">
         <span>{{text}}</span>
     </div>
 </template>
@@ -27,8 +27,7 @@
                 this.playAudio(path);
             },
 
-            playAudio: function (path)
-            {
+            playAudio: function (path) {
                 new Audio(path).play();
             },
 
@@ -53,7 +52,7 @@
                         extension = '.mp3';
                         break;
 
-                    case 'custom':
+                    case 'random':
                         break;
                 }
 
@@ -61,8 +60,16 @@
                 return dir + fileName + extension;
             },
 
+            // playRandom: function () {
+            //     new Audio(path).play();
+            //     const sounds = Object.values(this.sounds).flat(10);
+            //     const path = this.urlPrefix + this.flatten(this.text) + this.fileExtension;
+            //     this.play(sounds[Math.floor(Math.random() * sounds.length)]);
+            // },
 
             flatten: name => name.replace(/\s/g, '').toLowerCase()
         },
     }
 </script>
+
+
