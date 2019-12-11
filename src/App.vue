@@ -48,7 +48,6 @@
 
         return {
             urlPrefix: '/sounds/ee/',
-            fileExtension: '.wav',
             groups: {
                 units: {
                     type: groupTypes.UNIT,

@@ -16,11 +16,6 @@
             'type',
         ],
 
-        data: () => ({
-            urlPrefix: '/sounds/ee/',
-            fileExtension: '.wav',
-        }),
-
         methods: {
             activateButton: function () {
                 const path = this.getPath();
