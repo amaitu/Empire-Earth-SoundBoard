@@ -19,7 +19,6 @@
 </template>
 
 <script>
-    import Sound from "./components/Sound";
     import Subheading from "./components/Subheading";
     import SoundButton from "./components/SoundButton";
     import PartialFooter from "./components/PartialFooter";
@@ -33,7 +32,6 @@
             PartialFooter,
             SoundButton,
             Subheading,
-            Sound
         },
 
         data: data,
