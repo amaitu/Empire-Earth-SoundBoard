@@ -3,7 +3,7 @@
 
         <header class="flex items-center">
             <div class="flex justify-between items-center w-full">
-                <h1 class="uppercase stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
+                <h1 class="uppercase hover:text-empire-red-light stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3"
                     style="font-family: 'Broadsheet LDO', serif">
                     <a href="https://eesoundboard.online">Empire Earth Soundboard</a>
                 </h1>
