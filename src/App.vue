@@ -225,7 +225,7 @@
 
                     sounds: [
                         {label: 'Plague', filename: null,},
-                        {label: 'Nuke bomb', filename: null,},
+                        {label: 'Nuclear bomb', filename: 'nukebomb',},
                         {label: 'Building blow', filename: null,},
                     ],
                 },
