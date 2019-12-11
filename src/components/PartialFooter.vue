@@ -9,7 +9,7 @@
         </div>
 
         <div class="mt-10 border-empire-gold-light border-b-2 pb-6 text-center">
-            <h5 class="mb-8">
+            <h5 class="mb-8 tracking-wide">
                 Share:
             </h5>
             <div class="flex flex-wrap justify-between lg:justify-around">
