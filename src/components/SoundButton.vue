@@ -28,7 +28,6 @@
                 const path = this.getPath();
 
                 if (this.buttonCopy === 'stop' && this.audio) {
-                    console.log('stop');
                     this.audio.pause();
                     this.buttonCopy = this.text;
                     return;
