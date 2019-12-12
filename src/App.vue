@@ -128,6 +128,32 @@
                             label: 'Jester 4',
                             filename: null,
                         },
+
+                        {
+                            label: 'Prophet Grunt 1',
+                            filename: null,
+                        },
+
+                        {
+                            label: 'Prophet Grunt 2',
+                            filename: null,
+                        },
+
+                        {
+                            label: 'Prophet Grunt 3',
+                            filename: null,
+                        },
+
+                        {
+                            label: 'Prophet Grunt 4',
+                            filename: null,
+                        },
+
+                        {
+                            label: 'Ahh my eye',
+                            filename: null,
+                        },
+
                         {
                             label: 'The bell tolls for thee',
                             filename: null,
