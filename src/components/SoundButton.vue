@@ -23,7 +23,6 @@
             },
 
             playAudio: function (path) {
-                console.log(path);
                 new Audio(path).play();
             },
 
