@@ -53,7 +53,7 @@
                     type: groupTypes.UNIT,
                     sounds: [
                         {
-                            label: 'Deus Walt',
+                            label: 'Deus Vult',
                             filename: null,
                         },
                         {
