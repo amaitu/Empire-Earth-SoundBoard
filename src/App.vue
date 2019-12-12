@@ -210,6 +210,24 @@
                     ],
                 },
 
+                music: {
+                    type: groupTypes.MUSIC,
+                    sounds: [
+                        {
+                            label: 'Empire Earth Title Music',
+                            filename: 'intro',
+                        },
+                        {
+                            label: 'Siege',
+                            filename: null,
+                        },
+                        {
+                            label: 'Arthurian',
+                            filename: null,
+                        },
+                    ],
+                },
+
                 animals: {
                     type: groupTypes.UNIT,
                     sounds: [
