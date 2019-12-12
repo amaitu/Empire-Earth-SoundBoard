@@ -23,11 +23,12 @@
             },
 
             playAudio: function (path) {
+                console.log(path);
                 new Audio(path).play();
             },
 
             getPath: function () {
-                const prefix = '/sounds/ee/';
+                const prefix = 'sounds/ee/';
                 let dir;
                 let extension;
 
