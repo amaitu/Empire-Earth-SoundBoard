@@ -4,6 +4,8 @@
 
 ### [See the soundboard in action](https://eesoundboard.online/)
 
+Build with [Vue.js](https://vuejs.org/)
+
 ## Running the sound board locally:
 
 ### Project setup
