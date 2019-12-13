@@ -4,7 +4,7 @@
 
 ### [See the soundboard in action](https://eesoundboard.online/)
 
-Build with [Vue.js](https://vuejs.org/) and [Tailwind](https://tailwindcss.com/)
+Built with [Vue.js](https://vuejs.org/) and [Tailwind](https://tailwindcss.com/)
 
 ## Running the sound board locally:
 
