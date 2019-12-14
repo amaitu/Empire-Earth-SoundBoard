@@ -28,7 +28,7 @@
                 const path = this.getPath();
 
                 if (this.buttonCopy === 'stop' && this.audio) {
-                    this.audio.pause();
+                    this.pauseAudio();
                     this.buttonCopy = this.text;
                     return;
                 }
@@ -40,8 +40,8 @@
                 this.playAudio(path);
             },
 
-            stopAudio: function (path) {
-                new Audio(path).pause();
+            pauseAudio: function () {
+                this.audio.pause();
             },
 
             playAudio: function (path) {
@@ -50,9 +50,7 @@
             },
 
             getPath: function () {
-                // const prefix = 'sounds/ee/';
                 const prefix = 'https://ee-soundboard.s3.eu-west-2.amazonaws.com/';
-                // https://ee-soundboard.s3.eu-west-2.amazonaws.com/units/outstanding.wav
                 let dir;
                 let extension;
 
