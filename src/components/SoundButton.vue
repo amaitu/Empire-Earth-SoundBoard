@@ -50,7 +50,9 @@
             },
 
             getPath: function () {
-                const prefix = 'sounds/ee/';
+                // const prefix = 'sounds/ee/';
+                const prefix = 'https://ee-soundboard.s3.eu-west-2.amazonaws.com/';
+                // https://ee-soundboard.s3.eu-west-2.amazonaws.com/units/outstanding.wav
                 let dir;
                 let extension;
 
