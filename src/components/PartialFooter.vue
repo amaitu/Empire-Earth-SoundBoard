@@ -94,8 +94,8 @@
 
                 <li class="p-3 lg:p-2">
                     <a class="hover:text-empire-gold"
-                       href="https://www.youtube.com/watch?v=347qmxgydkE&list=PLB489C5423FD3D057">
-                        Empire Earth soundtrack
+                       href="https://www.reddit.com/r/empireearth/comments/e9ca3h/i_made_an_empire_earth_sound_board/">
+                        Request New Sounds
                     </a>
                 </li>
 
