@@ -2,7 +2,7 @@
     <footer class="mt-10 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
 
         <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
-            <h4 class="tracking-wide">A soundboard for the 2001 classic RTS game Empire Earth
+            <h4 class="tracking-wide">A nostalgic soundboard for the 2001 classic RTS game <span class="italic">Empire Earth</span>
                 <br>
                 <a class="hover:text-empire-gold" href="https://sgbarker.com/">by Steve Barker</a>
             </h4>
@@ -87,12 +87,6 @@
                 </li>
 
                 <li class="p-3 lg:p-2">
-                    <a class="hover:text-empire-gold" href="https://en.wikipedia.org/wiki/Empire_Earth_(video_game)">
-                        Empire Earth
-                    </a>
-                </li>
-
-                <li class="p-3 lg:p-2">
                     <a class="hover:text-empire-gold"
                        href="https://www.reddit.com/r/empireearth/comments/e9ca3h/i_made_an_empire_earth_sound_board/">
                         Request New Sounds
@@ -102,6 +96,12 @@
                 <li class="p-3 lg:p-2">
                     <a class="hover:text-empire-gold" href="mailto:ee@sgbarker.com">
                         Contact
+                    </a>
+                </li>
+
+                <li class="p-3 lg:p-2">
+                    <a class="hover:text-empire-gold" href="https://en.wikipedia.org/wiki/Empire_Earth_(video_game)">
+                        About Empire Earth
                     </a>
                 </li>
             </ul>
