@@ -206,11 +206,19 @@ export const groups = {
 
     dialog: {
         type: groupTypes.DIALOG,
+
         sounds: [
+            {label: 'Ah, a potato truck.', filename: 'future1_46',},
             {label: 'What be your business?', filename: 'british1_4',},
             {label: 'You don\'t have enough stone for that!', filename: 'een1ve1s_british1_83',},
             {label: 'Fortify our position', filename: 'british11_77',},
-            {label: 'Ah, a potato truck.', filename: 'future1_46',},
+            {label: 'In the name of the church...', filename: 'een1ve1s_british12_185',},
+            {label: 'Down this road lies the only bridge', filename: 'een1ve1s_british1_7',},
+            {label: 'High command has delivered.', filename: 'german5_28',},
+            {label: 'No fear!.', filename: 'german1_57',},
+            {label: 'The engine is dying.', filename: 'german1_56',},
+            {label: 'Greek prophet 1', filename: 'greek1_8',},
+            {label: 'Greek prophet 2', filename: 'greek1_5',},
         ],
     },
 
