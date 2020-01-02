@@ -230,4 +230,4 @@ export const groups = {
     //         {label: 'I\'m feeling lucky', filename: null,},
     //     ],
     // },
-},
+};
