@@ -2,7 +2,7 @@
     <footer class="mt-10 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
 
         <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
-            <h4 class="tracking-wide">A nostalgic soundboard for the 2001 classic RTS game <span class="italic">Empire Earth</span>
+            <h4 class="tracking-wide">All the nostalgic sounds from Empire Earth - the 2001 classic RTS game
                 <br>
                 <a class="hover:text-empire-gold" href="https://sgbarker.com/">by Steve Barker</a>
             </h4>
