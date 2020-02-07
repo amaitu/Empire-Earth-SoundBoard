@@ -13,10 +13,10 @@
         </header>
 
         <div v-for="(group, groupName) in groups">
-            <group :name="groupName" :type="group['type']" :sounds="group['sounds']"></group>
+            <group :name="groupName" :type="group['type']" :sounds="group['sounds']"/>
         </div>
 
-        <partial-footer></partial-footer>
+        <partial-footer/>
     </div>
 </template>
 

@@ -1,11 +1,12 @@
 <template>
     <div v-if="sounds.length > 0">
         <div v-on:click="toggle">
-            <subheading :text="name" v-bind:hidden="hidden"></subheading>
+            <subheading :text="name" v-bind:hidden="hidden"/>
         </div>
 
         <div v-bind:class="{ hidden: hidden }" class="flex flex-wrap justify-center slide-up">
-            <sound-button v-for="sound in sounds" v-on:click="click" :type="type" :filename="sound.filename" :text="sound.label"></sound-button>
+            <sound-button v-for="sound in sounds" :type="type" :filename="sound.filename"
+                          :text="sound.label"/>
         </div>
     </div>
 </template>
