@@ -43,7 +43,7 @@
             },
 
             sounds: {
-                // type: Array,
+                type: Array,
                 required: true
             },
         },

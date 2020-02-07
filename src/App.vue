@@ -25,7 +25,7 @@
     import SoundButton from "./components/SoundButton";
     import PartialFooter from "./components/PartialFooter";
     import Group from "@/components/Group";
-    import {groups} from "@/utils/groups";
+    import {groups} from "@/groups";
 
     export default {
         name: 'app',

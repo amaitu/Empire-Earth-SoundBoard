@@ -1,10 +1,9 @@
-const groupTypes: { MUSIC: string; UNIT: string; DIALOG: string; RANDOM: string } =
-    {
-        MUSIC: 'music',
-        UNIT: 'unit',
-        DIALOG: 'dialog',
-        RANDOM: 'random',
-    };
+export let groupTypes: { MUSIC: string; UNIT: string; DIALOG: string; RANDOM: string } = {
+    MUSIC: 'music',
+    UNIT: 'unit',
+    DIALOG: 'dialog',
+    RANDOM: 'random',
+};
 
 export const groups = {
     units: {
@@ -28,7 +27,6 @@ export const groups = {
             },
             {
                 label: 'Deus Vult',
-                filename: null,
             },
             {
                 label: 'As you wish',
@@ -172,11 +170,6 @@ export const groups = {
                 label: 'Where shall I go',
                 filename: null,
             },
-            // not working:
-            // {
-            //     label: 'William 3',
-            //     filename: null,
-            // },
             {
                 label: 'Who can I kill',
                 filename: null,
@@ -216,6 +209,14 @@ export const groups = {
         ],
     },
 
+    misc: {
+        hideLabel: true,
+        type: groupTypes.RANDOM,
+        sounds: [
+            {label: 'I\'m feeling lucky'},
+        ],
+    },
+
     music: {
         type: groupTypes.MUSIC,
         sounds: [
@@ -239,19 +240,15 @@ export const groups = {
         sounds: [
             {
                 label: 'Giraffe',
-                filename: null,
             },
             {
                 label: 'Hippo dying',
-                filename: null,
             },
             {
                 label: 'Tiger',
-                filename: null,
             },
             {
                 label: 'Unused Animal',
-                filename: null,
             },
         ],
     },
@@ -285,11 +282,4 @@ export const groups = {
             {label: 'Flare', filename: null,},
         ],
     },
-
-    // misc: {
-    //     type: groupTypes.RANDOM,
-    //     sounds: [
-    //         {label: 'I\'m feeling lucky', filename: null,},
-    //     ],
-    // },
 };

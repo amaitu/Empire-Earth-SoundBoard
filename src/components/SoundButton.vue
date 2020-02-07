@@ -7,6 +7,8 @@
 </template>
 
 <script>
+    import {groups, groupTypes} from '@/groups';
+
     export default {
         name: 'SoundButton',
 
@@ -25,13 +27,18 @@
 
         methods: {
             activateButton: function () {
-                const path = this.getPath();
-
                 if (this.buttonCopy === 'stop' && this.audio) {
                     this.pauseAudio();
                     this.buttonCopy = this.text;
                     return;
                 }
+
+                if (this.type === 'random') {
+                    this.playRandom();
+                    return;
+                }
+
+                const path = this.getPath(this.type, this.filename, this.text);
 
                 if (this.type === 'music') {
                     this.buttonCopy = 'stop';
@@ -49,12 +56,12 @@
                 this.audio.play();
             },
 
-            getPath: function () {
+            getPath: function (type, filename, text) {
                 const prefix = 'https://ee-soundboard.s3.eu-west-2.amazonaws.com/';
                 let dir;
                 let extension;
 
-                switch (this.type) {
+                switch (type) {
                     case 'unit':
                         dir = prefix + 'units/';
                         extension = '.wav';
@@ -69,21 +76,21 @@
                         dir = prefix + 'dialog/';
                         extension = '.mp3';
                         break;
-
-                    case 'random':
-                        break;
                 }
 
-                let fileName = this.filename ? this.filename : this.flatten(this.text);
+                let fileName = filename ? filename : this.flatten(text);
                 return dir + fileName + extension;
             },
 
-            // playRandom: function () {
-            //     new Audio(path).play();
-            //     const sounds = Object.values(this.sounds).flat(10);
-            //     const path = this.urlPrefix + this.flatten(this.text) + this.fileExtension;
-            //     this.play(sounds[Math.floor(Math.random() * sounds.length)]);
-            // },
+            playRandom: function () {
+                const sounds = groups.units.sounds;
+
+                const sound = sounds[Math.floor(Math.random() * sounds.length)];
+
+                const path = this.getPath(groupTypes.UNIT, sound.filename, sound.label);
+
+                this.playAudio(path);
+            },
 
             flatten: name => name.replace(/\s/g, '').toLowerCase()
         },
