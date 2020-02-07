@@ -5,7 +5,11 @@
         </div>
 
         <div v-bind:class="{ hidden: hidden }" class="flex flex-wrap justify-center slide-up">
-            <sound-button v-for="sound in sounds" :type="type" :filename="sound.filename"
+            <sound-button v-for="sound in sounds"
+                          v-bind:data="sound"
+                          v-bind:key="sound"
+                          :type="type"
+                          :filename="sound.filename"
                           :text="sound.label"/>
         </div>
     </div>
@@ -28,24 +32,24 @@
 
         methods: {
             toggle: function () {
-                this.hidden =!this.hidden;
+                this.hidden = !this.hidden;
             },
         },
 
         props: {
             name: {
                 type: String,
-                required: true
+                required: true,
             },
 
             type: {
                 type: String,
-                required: true
+                required: true,
             },
 
             sounds: {
                 type: Array,
-                required: true
+                required: true,
             },
         },
     }
