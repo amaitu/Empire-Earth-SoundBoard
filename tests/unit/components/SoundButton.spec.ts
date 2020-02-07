@@ -5,6 +5,7 @@ import SoundButton from '@/components/SoundButton.vue';
 describe('SoundButton.vue', () => {
     it('renders', () => {
         const expectedText = 'Cyborg Molotov';
+        // ye
 
         const wrapper = mount(SoundButton, {
             propsData: {
