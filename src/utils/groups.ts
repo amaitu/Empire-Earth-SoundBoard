@@ -11,11 +11,23 @@ export const groups = {
         type: groupTypes.UNIT,
         sounds: [
             {
-                label: 'Deus Vult',
+                label: 'Mm',
+                filename: null,
+            },
+            {
+                label: 'Mm Mm',
+                filename: null,
+            },
+            {
+                label: 'Medic Death',
                 filename: null,
             },
             {
                 label: 'What is your bidding',
+                filename: null,
+            },
+            {
+                label: 'Deus Vult',
                 filename: null,
             },
             {
@@ -35,6 +47,38 @@ export const groups = {
                 filename: null,
             },
             {
+                label: 'Grunt Scream',
+                filename: null,
+            },
+            {
+                label: 'Robot Comrad',
+                filename: null,
+            },
+            {
+                label: 'Leave Noone Alive',
+                filename: null,
+            },
+            {
+                label: 'Heads Will Roll',
+                filename: null,
+            },
+            {
+                label: 'Greatness Waits',
+                filename: null,
+            },
+            {
+                label: 'Galory',
+                filename: null,
+            },
+            {
+                label: 'Ja',
+                filename: null,
+            },
+            {
+                label: 'Hallelujah',
+                filename: null,
+            },
+            {
                 label: 'Set full sail',
                 filename: null,
             },
@@ -48,6 +92,10 @@ export const groups = {
             },
             {
                 label: 'SIRE',
+                filename: null,
+            },
+            {
+                label: 'Your Secret Is Safe',
                 filename: null,
             },
             {
@@ -138,6 +186,10 @@ export const groups = {
                 filename: null,
             },
             {
+                label: 'Your orders',
+                filename: null,
+            },
+            {
                 label: 'Yes me lord',
                 filename: null,
             },
@@ -151,10 +203,6 @@ export const groups = {
             },
             {
                 label: 'For the motherland',
-                filename: null,
-            },
-            {
-                label: 'Your orders',
                 filename: null,
             },
             {
@@ -194,11 +242,15 @@ export const groups = {
                 filename: null,
             },
             {
+                label: 'Hippo dying',
+                filename: null,
+            },
+            {
                 label: 'Tiger',
                 filename: null,
             },
             {
-                label: 'Hippo dying',
+                label: 'Unused Animal',
                 filename: null,
             },
         ],
@@ -208,15 +260,15 @@ export const groups = {
         type: groupTypes.DIALOG,
 
         sounds: [
-            {label: 'Ah, a potato truck.', filename: 'future1_46',},
+            {label: 'Ah, a potato truck...', filename: 'future1_46',},
             {label: 'What be your business?', filename: 'british1_4',},
             {label: 'You don\'t have enough stone for that!', filename: 'een1ve1s_british1_83',},
-            {label: 'Fortify our position', filename: 'british11_77',},
-            {label: 'In the name of the church...', filename: 'een1ve1s_british12_185',},
-            {label: 'Down this road lies the only bridge', filename: 'een1ve1s_british1_7',},
-            {label: 'High command has delivered.', filename: 'german5_28',},
-            {label: 'No fear!', filename: 'german1_57',},
-            {label: 'The engine is dying', filename: 'german1_56',},
+            {label: 'Fortify our position...', filename: 'british11_77',},
+            {label: 'In the name of the king...', filename: 'een1ve1s_british12_185',},
+            {label: 'Down this road lies the only bridge...', filename: 'een1ve1s_british1_7',},
+            {label: 'High command has delivered...', filename: 'german5_28',},
+            {label: 'No fear...', filename: 'german1_57',},
+            {label: 'The engine is dying...', filename: 'german1_56',},
             {label: 'Greek prophet 1', filename: 'greek1_8',},
             {label: 'Greek prophet 2', filename: 'greek1_5',},
         ],
@@ -227,8 +279,10 @@ export const groups = {
 
         sounds: [
             {label: 'Plague', filename: null,},
+            {label: 'Rally', filename: null,},
             {label: 'Nuclear bomb', filename: 'nukebomb',},
             {label: 'Building blow', filename: null,},
+            {label: 'Flare', filename: null,},
         ],
     },
 
