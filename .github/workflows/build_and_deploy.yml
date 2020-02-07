@@ -13,9 +13,9 @@ jobs:
     - name: Install
       uses: npm install
     - name: test
-      uses: npm run test:unit
+      run: npm run test:unit
     - name: build
-      uses: npm run build
+      run: npm run build
     - name: Deploy to Firebase
       uses: lowply/deploy-firebase@v0.0.2
       env:
