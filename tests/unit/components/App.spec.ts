@@ -4,8 +4,8 @@ import App from "@/App.vue";
 
 describe('App.vue', () => {
     it('renders', () => {
-        const h1 = 'Empire Earth Soundboard';
+        const h1Text = 'Empire Earth Soundboard';
         const wrapper = shallowMount(App);
-        expect(wrapper.text()).to.include(h1)
+        expect(wrapper.text()).to.include(h1Text);
     })
 });

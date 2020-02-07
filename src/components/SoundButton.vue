@@ -8,6 +8,7 @@
 
 <script>
     import {groups, groupTypes} from '@/groups';
+    import {getStorageName} from "@/utils/utils.js";
 
     export default {
         name: 'SoundButton',
@@ -78,7 +79,7 @@
                         break;
                 }
 
-                let fileName = filename ? filename : this.flatten(text);
+                let fileName = filename ? filename : getStorageName(text);
                 return dir + fileName + extension;
             },
 
@@ -91,8 +92,6 @@
 
                 this.playAudio(path);
             },
-
-            flatten: name => name.replace(/\s/g, '').toLowerCase()
         },
     }
 </script>
