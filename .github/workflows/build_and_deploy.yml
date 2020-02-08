@@ -11,7 +11,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@master
     - name: Install
-      uses: npm install
+      run: npm install
     - name: test
       run: npm run test:unit
     - name: build
