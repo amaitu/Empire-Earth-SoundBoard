@@ -10,11 +10,11 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Install
+    - name: Install dependencies
       run: npm install
-    - name: test
-      run: npm run test:unit
-    - name: build
+    - name: Test
+      run: npm run test
+    - name: Build for production
       run: npm run build
     - name: Deploy to Firebase
       uses: lowply/deploy-firebase@v0.0.2
