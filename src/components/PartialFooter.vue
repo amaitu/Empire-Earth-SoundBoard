@@ -82,7 +82,7 @@
 
                 <li class="p-3 lg:p-2">
                     <a class="hover:text-empire-gold" href="https://github.com/amaitu/Empire-Earth-SoundBoard">
-                        Source code
+                        Source Code
                     </a>
                 </li>
 
