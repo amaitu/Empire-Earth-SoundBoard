@@ -58,7 +58,7 @@
             },
 
             getPath: function (type, filename, text) {
-                const prefix = 'https://ee-soundboard.s3.eu-west-2.amazonaws.com/';
+                const prefix = 'https://f002.backblazeb2.com/file/ee-soundboard/';
                 let dir;
                 let extension;
 
