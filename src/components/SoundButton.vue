@@ -42,63 +42,59 @@
                     return;
                 }
 
-                if (this.type === 'random') {
-                    return this.playRandom();
-                }
-
                 this.playState = PLAY_STATE_ACTIVE;
+
                 this.playAudio(
                     this.getPath(this.type, this.filename, this.text)
-                ).then(this.resetButton)
+                )
+                    .catch(this.handleError)
+                    .finally(this.resetButton)
             },
 
             resetButton: function () {
-                this.playState = 'default'
+                this.playState = PLAY_STATE_DEFAULT
             },
 
-            // isPausable: function () {
-            // todo - make music sounds pausable
-            // return this.type === 'music'
-            // },
-
-            // pauseAudio: function () {
-            //     this.audio.pause();
-            // },
+            handleError: function () {
+                alert('Error playing sound. Please try again later.')
+            },
 
             playAudio: function (path) {
-                return new Promise(function (resolve, reject) {   // return a promise
-                    var audio = new Audio(path);                     // create audio wo/ src
-                    audio.preload = "auto";                      // intend to play through
-                    audio.autoplay = true;                       // autoplay when loaded
-                    audio.onerror = reject;                      // on error, reject
-                    audio.onended = resolve;                     // when done, resolve
-
-                    // audio.src = path + url + suffix; // just for example
+                return new Promise(function (resolve, reject) {
+                    let audio = new Audio();
+                    audio.preload = 'auto';
+                    audio.autoplay = true;
+                    audio.onerror = reject;
+                    audio.onended = resolve;
+                    audio.src = path;
                 });
-
-            },
-
-            loadAudio: function (path) {
-                this.audio = new Audio(path);
             },
 
             getPath: function (type, filename, text) {
+                // todo - refactor
+                if (type ===  groupTypes.RANDOM) {
+                    const sound = this.getRandomSound();
+                    type = groupTypes.UNIT;
+                    filename = sound.filename;
+                    text = sound.label;
+                }
+
                 const prefix = 'https://assets.eesoundboard.online/file/ee-soundboard/';
                 let dir;
                 let extension;
 
                 switch (type) {
-                    case 'unit':
+                    case groupTypes.UNIT:
                         dir = prefix + 'units/';
                         extension = '.wav';
                         break;
 
-                    case 'music':
+                    case groupTypes.MUSIC:
                         dir = prefix + 'music/';
                         extension = '.mp3';
                         break;
 
-                    case 'dialog':
+                    case groupTypes.DIALOG:
                         dir = prefix + 'dialog/';
                         extension = '.mp3';
                         break;
@@ -108,14 +104,11 @@
                 return dir + fileName + extension;
             },
 
-            playRandom: function () {
+            getRandomSound: function () {
                 const sounds = groups.units.sounds;
+                console.log(sounds[Math.floor(Math.random() * sounds.length)]);
 
-                const sound = sounds[Math.floor(Math.random() * sounds.length)];
-
-                const path = this.getPath(groupTypes.UNIT, sound.filename, sound.label);
-
-                this.playAudio(path);
+                return sounds[Math.floor(Math.random() * sounds.length)];
             },
         },
     }
