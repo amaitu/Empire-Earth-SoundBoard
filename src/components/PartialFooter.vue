@@ -1,18 +1,12 @@
 <template>
     <footer class="mt-10 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
 
-        <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
-            <h4 class="tracking-wide">All the nostalgic sounds from Empire Earth - the 2001 classic RTS game
-                <br>
-                <a class="hover:text-empire-gold" href="https://sgbarker.com/">by Steve Barker</a>
-            </h4>
-        </div>
 
-        <div class="mt-10 border-empire-gold-light border-b-2 pb-6 text-center">
-            <h5 class="mb-8 tracking-wide">
+        <div class="mt-5 border-empire-gold-light border-b-2 pb-6 text-center">
+            <h4 class="text-xl mb-8 tracking-wide">
                 Share:
-            </h5>
-            <div class="flex flex-wrap justify-between lg:justify-around">
+            </h4>
+            <div class="flex flex-wrap justify-between md:justify-around lg:justify-around">
                 <div class="p-3 lg:p-2" v-on:click="socialLink('facebook')">
                     <svg class="cursor-pointer svg-button w-10 fill-current" version="1.1"
                          xmlns="http://www.w3.org/2000/svg"
@@ -77,9 +71,21 @@
 
             </div>
         </div>
-        <div class="mt-10 pb-6">
-            <ul>
 
+
+        <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
+            <h3 class="text-xl mb-2 tracking-wide">Empire Earth Soundboard
+            </h3>
+            <p class="mb-4"><a class="link-underline" href="https://sgbarker.com/">By Steve Barker</a>
+
+            <p class="">
+                Thanks to: <a href="https://vuejs.org/">Vue.js</a>; <a href="https://www.cloudflare.com/">Cloudflare</a>;
+                <a href="https://tailwindcss.com/">tailwindcss</a>.
+            </p>
+        </div>
+
+        <div class="text-center mt-10 pb-6">
+            <ul>
                 <li class="p-3 lg:p-2">
                     <a class="hover:text-empire-gold" href="https://github.com/amaitu/Empire-Earth-SoundBoard">
                         Source Code
@@ -106,6 +112,7 @@
                 </li>
             </ul>
         </div>
+
     </footer>
 </template>
 
