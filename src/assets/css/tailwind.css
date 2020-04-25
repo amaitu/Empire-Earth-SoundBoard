@@ -42,6 +42,10 @@ body {
     fill: #E3CB80;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .stroke {
     /* WebKit (Safari/Chrome) Only */
     -webkit-text-stroke: 1px #E3CB80;
