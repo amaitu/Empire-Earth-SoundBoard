@@ -76,7 +76,6 @@
         <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
             <h3 class="text-xl mb-2 tracking-wide">Empire Earth Soundboard
             </h3>
-
             <p class="mb-4"><a class="link-underline" href="https://sgbarker.com/">By Steve Barker</a>
 
             <p class="">
