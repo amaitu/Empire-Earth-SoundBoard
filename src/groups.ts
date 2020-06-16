@@ -209,14 +209,6 @@ export const groups = {
         ],
     },
 
-    misc: {
-        hideLabel: true,
-        type: groupTypes.RANDOM,
-        sounds: [
-            {label: 'I\'m feeling lucky'},
-        ],
-    },
-
     music: {
         type: groupTypes.MUSIC,
         sounds: [
@@ -280,6 +272,14 @@ export const groups = {
             {label: 'Nuclear bomb', filename: 'nukebomb',},
             {label: 'Building blow', filename: null,},
             {label: 'Flare', filename: null,},
+        ],
+    },
+
+    misc: {
+        hideLabel: true,
+        type: groupTypes.RANDOM,
+        sounds: [
+            {label: 'I\'m feeling lucky'},
         ],
     },
 };
