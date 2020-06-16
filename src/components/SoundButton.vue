@@ -36,6 +36,14 @@
         },
 
         methods: {
+            resetTitle: function () {
+                document.title = 'Empire Earth Soundboard';
+            },
+
+            updateTitle: function (string) {
+                document.title = string;
+            },
+
             activateButton: function () {
                 // If the audio is already playing, return.
                 if (this.playState === PLAY_STATE_ACTIVE) {
@@ -44,14 +52,18 @@
 
                 this.playState = PLAY_STATE_ACTIVE;
 
+                this.updateTitle('🔊 ' + this.text)
+
                 this.playAudio(
                     this.getPath(this.type, this.filename, this.text)
                 )
                     .catch(this.handleError)
                     .finally(this.resetButton)
+
             },
 
             resetButton: function () {
+                this.resetTitle();
                 this.playState = PLAY_STATE_DEFAULT
             },
 
@@ -72,7 +84,7 @@
 
             getPath: function (type, filename, text) {
                 // todo - refactor
-                if (type ===  groupTypes.RANDOM) {
+                if (type === groupTypes.RANDOM) {
                     const sound = this.getRandomSound();
                     type = groupTypes.UNIT;
                     filename = sound.filename;
