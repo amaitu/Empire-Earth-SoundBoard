@@ -118,8 +118,6 @@
 
             getRandomSound: function () {
                 const sounds = groups.units.sounds;
-                console.log(sounds[Math.floor(Math.random() * sounds.length)]);
-
                 return sounds[Math.floor(Math.random() * sounds.length)];
             },
         },
