@@ -10,6 +10,10 @@ export const groups = {
         type: groupTypes.UNIT,
         sounds: [
             {
+                label: 'We\'re under attack!',
+                filename: 'wereunderattack',
+            },
+            {
                 label: 'Mm',
                 filename: null,
             },
@@ -17,6 +21,23 @@ export const groups = {
                 label: 'Mm Mm',
                 filename: null,
             },
+            {
+                label: 'Deus absconditus',
+                filename: null,
+            },
+            {
+                label: 'For God and country',
+                filename: null,
+            },
+            {
+                label: 'Fire Broadside',
+                filename: null,
+            },
+            {
+                label: 'By the Gods',
+                filename: null,
+            },
+
             {
                 label: 'Medic Death',
                 filename: null,
