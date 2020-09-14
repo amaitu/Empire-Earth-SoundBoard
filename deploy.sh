@@ -7,6 +7,8 @@ npm run build
 
 cd dist
 
+echo eesoundboard.online >> CNAME
+
 git init
 git add -A
 git commit -m 'deploy'
