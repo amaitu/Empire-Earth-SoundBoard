@@ -22,3 +22,4 @@ npm run serve
 ```
 npm run build
 ```
+This command also runs the prerender script, as this can be reduced down to a static site.
