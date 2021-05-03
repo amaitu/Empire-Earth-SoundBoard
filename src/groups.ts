@@ -878,7 +878,6 @@ export const groups = {
             {filename: 'ns2stoma'},
             {filename: 'ns2talas'},
             {filename: 'nscream1'},
-            {filename: 'nukebomb-8'},
             {filename: 'nv3affirmative'},
             {filename: 'nv3affirmative2'},
             {filename: 'nv3awaitingorders'},
