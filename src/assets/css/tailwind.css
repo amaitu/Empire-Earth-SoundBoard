@@ -18,7 +18,7 @@ body {
 }
 
 .slide-up {
-    animation: slide-up 700ms;
+    animation: slide-up 600ms;
 }
 
 @keyframes slide-up {

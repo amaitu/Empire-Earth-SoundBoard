@@ -9,6 +9,7 @@ export let groupTypes: { MUSIC: string; UNIT: string; DIALOG: string; RANDOM: st
 export const groups = {
     units: {
         type: groupTypes.UNIT,
+        extension: '.wav',
         sounds: [
             {
                 label: 'We\'re under attack!',
@@ -233,6 +234,7 @@ export const groups = {
 
     music: {
         type: groupTypes.MUSIC,
+        extension: '.mp3',
         sounds: [
             {
                 label: 'Empire Earth Title Music',
@@ -251,6 +253,7 @@ export const groups = {
 
     animals: {
         type: groupTypes.UNIT,
+        extension: '.wav',
         sounds: [
             {
                 label: 'Giraffe',
@@ -269,7 +272,7 @@ export const groups = {
 
     dialog: {
         type: groupTypes.DIALOG,
-
+        extension: '.mp3',
         sounds: [
             {label: 'Ah, a potato truck...', filename: 'future1_46',},
             {label: 'What be your business?', filename: 'british1_4',},
@@ -287,7 +290,7 @@ export const groups = {
 
     ambient: {
         type: groupTypes.UNIT,
-
+        extension: '.wav',
         sounds: [
             {label: 'Plague', filename: null,},
             {label: 'Rally', filename: null,},
@@ -300,6 +303,7 @@ export const groups = {
     unsorted: {
         hideLabel: false,
         type: groupTypes.UNSORTED,
+        extension: '.wav',
         sounds: [
             {filename: 'antimatter-8'},
             {filename: 'archery-8'},

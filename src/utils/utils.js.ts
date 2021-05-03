@@ -1,1 +1,1 @@
-export const convertHumanNameToFileName = (name: string) => name.replace(/\s/g, '').toLowerCase();
+export const convertLabelToFileName = (name: string) => name.replace(/\s/g, '').toLowerCase();

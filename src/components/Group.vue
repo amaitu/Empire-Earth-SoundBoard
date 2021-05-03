@@ -4,11 +4,11 @@
       <subheading :text="name" v-bind:hidden="hidden"/>
     </div>
 
-    <div v-bind:class="{ hidden: hidden }" class="flex flex-wrap justify-center slide-up">
+    <div v-bind:class="{ hidden: hidden }" class="flex w-full flex-wrap justify-center slide-up">
       <sound-button v-for="sound in sounds"
+                    :sound="sound"
+                    :extension="extension"
                     :type="type"
-                    :filename="sound.filename"
-                    :text="sound.label ? sound.label : sound.filename"
       />
     </div>
   </div>
@@ -48,6 +48,11 @@ export default {
 
     sounds: {
       type: Array,
+      required: true,
+    },
+
+    extension: {
+      type: String,
       required: true,
     },
   },

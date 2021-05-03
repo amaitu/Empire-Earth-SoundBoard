@@ -2,7 +2,7 @@
   <div id="app" class="mx-auto font-serif">
     <header class="flex items-center">
       <div
-          class="uppercase hover:text-empire-red-light stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3">
+          class="uppercase hover:text-empire-red-light stroke tracking-wider text-empire-red text-4xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3">
         <a href="https://eesoundboard.online">
           <h1 class=""
               style="font-family: 'Broadsheet LDO', serif">
@@ -12,13 +12,15 @@
       </div>
     </header>
 
-<!--    <div-->
-<!--        class="flex w-1/12 m-auto rounded text-empire-gold-light p-4 bg-empire-red-light justify-center capitalize cursor-pointer text-xl lg:text-2xl ">-->
-<!--      Random-->
-<!--    </div>-->
+    <random-button/>
 
     <div v-for="(group, groupName) in groups">
-      <group :name="groupName" :type="group['type']" :sounds="group['sounds']"/>
+      <group
+          :name="groupName"
+          :type="group['type']"
+          :extension="group['extension']"
+          :sounds="group['sounds']"
+      />
     </div>
 
     <partial-footer/>
@@ -31,11 +33,13 @@ import SoundButton from "./components/SoundButton";
 import PartialFooter from "./components/PartialFooter";
 import Group from "@/components/Group";
 import {groups} from "@/groups";
+import RandomButton from "@/components/RandomButton";
 
 export default {
   name: 'app',
 
   components: {
+    RandomButton,
     Group,
     PartialFooter,
     SoundButton,
