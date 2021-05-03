@@ -36,18 +36,8 @@ export default {
   },
 
   methods: {
-    resetTitle: function () {
-      document.title = 'Empire Earth Soundboard';
-    },
-
-    updateTitle: function (string) {
-      document.title = string;
-    },
-
     activateButton: function () {
       this.playState = PLAY_STATE_ACTIVE;
-
-      this.updateTitle('🔊 ' + this.text)
 
       this.playAudio(
           this.getPath(this.type, this.filename, this.text)
@@ -55,10 +45,12 @@ export default {
           .then(
               this.resetButton
           )
+          .error(
+              this.handleError
+          )
     },
 
     resetButton: function () {
-      this.resetTitle();
       this.playState = PLAY_STATE_DEFAULT
     },
 
@@ -78,14 +70,6 @@ export default {
     },
 
     getPath: function (type, filename, text) {
-      // todo - refactor
-      if (type === groupTypes.RANDOM) {
-        const sound = this.getRandomSound();
-        type = groupTypes.UNIT;
-        filename = sound.filename;
-        text = sound.label;
-      }
-
       const prefix = 'sounds/';
       let dir;
       let extension;
@@ -117,7 +101,7 @@ export default {
     },
 
     getRandomSound: function () {
-      const sounds = groups.units.sounds;
+      const sounds = groups.unsorted.sounds;
       return sounds[Math.floor(Math.random() * sounds.length)];
     },
   },

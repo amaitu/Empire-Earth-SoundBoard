@@ -4,7 +4,7 @@
       <subheading :text="name" v-bind:hidden="hidden"/>
     </div>
 
-    <div v-bind:class="{ hidden: hidden }" class="flex flex-wrap justify-center slide-up mr-48">
+    <div v-bind:class="{ hidden: hidden }" class="flex flex-wrap justify-center slide-up">
       <sound-button v-for="sound in sounds"
                     :type="type"
                     :filename="sound.filename"

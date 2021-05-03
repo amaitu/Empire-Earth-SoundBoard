@@ -1,4 +1,6 @@
 module.exports = {
+    // purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
             colors: {
@@ -6,9 +8,11 @@ module.exports = {
                 'empire-red-light': '#8b0606',
                 'empire-gold': '#E3CB80',
                 'empire-gold-light': '#e3e3b4',
-            }
-        }
+            },
+        },
     },
-    variants: {},
-    plugins: []
-};
+    variants: {
+        extend: {},
+    },
+    plugins: [],
+}
