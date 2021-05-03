@@ -1,1 +1,1 @@
-export const getStorageName = (name: string) => name.replace(/\s/g, '').toLowerCase();
+export const convertHumanNameToFileName = (name: string) => name.replace(/\s/g, '').toLowerCase();

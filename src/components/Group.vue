@@ -10,7 +10,7 @@
                           v-bind:key="sound"
                           :type="type"
                           :filename="sound.filename"
-                          :text="sound.label"/>
+                          :text="sound.label ? sound.label : sound.filename"/>
         </div>
     </div>
 </template>

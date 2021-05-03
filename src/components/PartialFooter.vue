@@ -79,7 +79,7 @@
             <p class="mb-4"><a class="link-underline" href="https://sgbarker.com/">By Steve Barker</a>
 
             <p class="">
-                Thanks to: <a href="https://vuejs.org/">Vue.js</a>; <a href="https://www.cloudflare.com/">Cloudflare</a>;
+                Built with: <a href="https://vuejs.org/">Vue.js</a>; <a href="https://www.cloudflare.com/">Cloudflare</a>;
                 <a href="https://tailwindcss.com/">tailwindcss</a>.
             </p>
         </div>
@@ -89,13 +89,6 @@
                 <li class="p-3 lg:p-2">
                     <a class="hover:text-empire-gold" href="https://github.com/amaitu/Empire-Earth-SoundBoard">
                         Source Code
-                    </a>
-                </li>
-
-                <li class="p-3 lg:p-2">
-                    <a class="hover:text-empire-gold"
-                       href="https://www.reddit.com/r/empireearth/comments/e9ca3h/i_made_an_empire_earth_sound_board/">
-                        Request New Sounds
                     </a>
                 </li>
 
