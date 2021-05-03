@@ -1,6 +1,5 @@
 <template>
     <div id="app" class="mx-auto font-serif">
-
         <header class="flex items-center">
             <div class="uppercase hover:text-empire-red-light stroke tracking-wider text-empire-red text-3xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3">
                 <a href="https://eesoundboard.online">
