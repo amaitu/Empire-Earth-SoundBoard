@@ -1,9 +1,9 @@
 <template>
     <footer class="mt-20 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
         <div class="mt-5 border-empire-gold-light border-b-2 pb-6 text-center">
-            <h5 class="text-xl mb-8 tracking-wide">
+            <h4 class="text-xl mb-8 tracking-wide">
                 Share:
-            </h5>
+            </h4>
             <div class="flex flex-wrap justify-between md:justify-around lg:justify-around">
                 <div class="p-3 lg:p-2" v-on:click="socialLink('facebook')">
                     <svg class="cursor-pointer svg-button w-10 fill-current" version="1.1"
@@ -70,10 +70,9 @@
             </div>
         </div>
 
-
         <div class="mt-6 text-center text-lg mb-1 lg:mb-4">
-            <h3 class="text-xl mb-2 tracking-wide">Empire Earth Soundboard
-            </h3>
+            <h5 class="text-xl mb-2 tracking-wide">Empire Earth Soundboard
+            </h5>
             <p class="mb-4"><a class="link-underline" href="https://sgbarker.com/">By Steve Barker</a>
 
             <p class="">
