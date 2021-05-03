@@ -1,4 +1,14 @@
 {
+  "name": "eesoundboard",
+  "version": "0.2.1",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test": "npm run test:unit"
+  },
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
@@ -20,22 +30,14 @@
     "@vue/cli-service": "^4.5.8",
     "@vue/test-utils": "1.0.0-beta.29",
     "chai": "^4.1.2",
+    "prerender-spa-plugin": "^3.2.1",
     "sass": "^1.27.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^1.9.5",
     "typescript": "^3.9.7",
+    "vue-cli-plugin-prerender-spa": "~1.1.6",
     "vue-template-compiler": "^2.6.12"
   },
   "license": "UNLICENSED",
-  "name": "eesoundboard",
-  "private": false,
-  "repository": "https://github.com/amaitu/Empire-Earth-SoundBoard",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test": "npm run test:unit"
-  },
-  "version": "0.2.1"
+  "repository": "https://github.com/amaitu/Empire-Earth-SoundBoard"
 }
