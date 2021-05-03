@@ -1,7 +1,5 @@
 <template>
-    <footer class="mt-10 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
-
-
+    <footer class="mt-20 flex flex-col p-6 lg:p-10 bg-black text-empire-gold-light">
         <div class="mt-5 border-empire-gold-light border-b-2 pb-6 text-center">
             <h4 class="text-xl mb-8 tracking-wide">
                 Share:

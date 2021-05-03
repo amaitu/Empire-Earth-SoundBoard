@@ -25,7 +25,7 @@ export default {
 
   data() {
     return {
-      hidden: false,
+      hidden: this.sounds && this.sounds.length > 100,
     }
   },
 
