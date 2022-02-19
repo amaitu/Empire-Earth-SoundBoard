@@ -7,19 +7,19 @@
 Built with [Vue.js](https://vuejs.org/) and [Tailwind](https://tailwindcss.com/)
 
 ## Running the sound board locally:
-
+    
 ### Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn build
 ```
 This command also runs the prerender script, as this can be reduced down to a static site.
