@@ -12,18 +12,7 @@
       </div>
 
       <!-- Language toggle (visual only for now; does not change sound files) -->
-      <div class="ml-4 flex items-center">
-        <label for="language-select" class="hidden sm:inline text-sm text-gray-700 mr-2">Language</label>
-        <select
-          id="language-select"
-          v-model="language"
-          @change="onLanguageChange"
-          class="bg-white border border-gray-300 rounded px-3 py-1 text-sm"
-          aria-label="Select language">
-          <option value="en">🇬🇧 English</option>
-          <option value="de">🇩🇪 Deutsch</option>
-        </select>
-      </div>
+      <language-toggle @language-changed="setLanguage"/>
     </header>
 
     <random-button/>
@@ -48,6 +37,7 @@ import PartialFooter from "./components/PartialFooter";
 import Group from "@/components/Group";
 import {groups} from "@/groups";
 import RandomButton from "@/components/RandomButton";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export default {
   name: 'app',
@@ -58,6 +48,7 @@ export default {
     PartialFooter,
     SoundButton,
     Subheading,
+    LanguageToggle,
   },
 
   data: data,
