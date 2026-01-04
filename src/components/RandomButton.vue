@@ -22,10 +22,8 @@ export default {
   },
   methods: {
     activateButton: function () {
-      const groupsToInclude = [
-        'units',
-        'unsorted',
-      ]
+      // If German is selected, only use the 'unsorted' group (German files are placed under _german/unsorted)
+      const groupsToInclude = this.language === 'de' ? ['unsorted'] : ['units', 'unsorted'];
 
       const groupName = groupsToInclude[Math.floor(Math.random() * groupsToInclude.length)];
       const group = groups[groupName]

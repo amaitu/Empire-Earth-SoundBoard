@@ -17,7 +17,7 @@
 
     <random-button :language="language"/>
 
-    <div v-for="(group, groupName) in groups">
+    <div v-for="(group, groupName) in visibleGroups">
       <group
           :name="groupName"
           :type="group['type']"
@@ -53,6 +53,17 @@ export default {
   },
 
   data: data,
+
+  computed: {
+    // Show only the 'unsorted' group when German is selected; otherwise show all groups
+    visibleGroups() {
+      if (this.language === 'de') {
+        // keep shape as an object with key 'unsorted' to match v-for usage in template
+        return { unsorted: this.groups.unsorted };
+      }
+      return this.groups;
+    }
+  },
 
   // The language state is local for now; switching will be wired to actual sound file selection later.
   methods: {
