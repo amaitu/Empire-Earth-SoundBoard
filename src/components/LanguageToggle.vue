@@ -1,6 +1,6 @@
 <template>
-  <div class="ml-4 flex items-center">
-    <label for="language-select" class="hidden sm:inline text-sm text-gray-700 mr-2">Language</label>
+  <div class="ml-4 mr-4 flex items-center">
+    <label for="language-select" class="hidden sm:inline text-sm text-gray-700 mr-2">Audio:</label>
     <select
       id="language-select"
       v-model="language"
@@ -29,4 +29,3 @@ export default {
   },
 };
 </script>
-
