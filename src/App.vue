@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="mx-auto font-serif">
-    <header class="flex items-center">
+    <header class="flex items-center justify-between px-4 w-full">
       <div
           class="uppercase hover:text-empire-red-light stroke tracking-wider text-empire-red text-4xl md:text-4xl lg:text-6xl text-center m-auto font-normal lg:p-3">
         <a href="https://eesoundboard.online">
@@ -9,6 +9,20 @@
             Empire Earth Soundboard
           </h1>
         </a>
+      </div>
+
+      <!-- Language toggle (visual only for now; does not change sound files) -->
+      <div class="ml-4 flex items-center">
+        <label for="language-select" class="hidden sm:inline text-sm text-gray-700 mr-2">Language</label>
+        <select
+          id="language-select"
+          v-model="language"
+          @change="onLanguageChange"
+          class="bg-white border border-gray-300 rounded px-3 py-1 text-sm"
+          aria-label="Select language">
+          <option value="en">🇬🇧 English</option>
+          <option value="de">🇩🇪 Deutsch</option>
+        </select>
       </div>
     </header>
 
@@ -47,12 +61,27 @@ export default {
   },
 
   data: data,
-}
+
+  // The language state is local for now; switching will be wired to actual sound file selection later.
+  methods: {
+    setLanguage(lang) {
+      this.language = lang;
+    },
+    onLanguageChange(event) {
+      // v-model already updated `language`; this method kept for side-effects later.
+      // Currently a no-op so language selection is visual only.
+      const newLang = event.target.value;
+      this.language = newLang;
+    }
+  },
+};
 
 function data() {
   return {
     urlPrefix: '/sounds/ee/',
     groups: groups,
+    // default language - visual toggle only at this stage
+    language: 'en',
   };
 }
 </script>
