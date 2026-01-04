@@ -10,7 +10,7 @@ export function playSound(sound, extension, type, language = 'en') {
         audio.autoplay = true;
         audio.onerror = reject;
         audio.onended = resolve;
-        const prefix = language === 'de' ? '_german' : type;    // The german files are not categorized
+        const prefix = language === 'de' ? '_de' : type;    // The german files are not categorized
         audio.src = `sounds/${prefix}/${fileName}${extension}`;
     });
 }
