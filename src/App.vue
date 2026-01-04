@@ -11,11 +11,11 @@
         </a>
       </div>
 
-      <!-- Language toggle (visual only for now; does not change sound files) -->
+      <!-- Language toggle -->
       <language-toggle @language-changed="setLanguage"/>
     </header>
 
-    <random-button/>
+    <random-button :language="language"/>
 
     <div v-for="(group, groupName) in groups">
       <group
@@ -23,6 +23,7 @@
           :type="group['type']"
           :extension="group['extension']"
           :sounds="group['sounds']"
+          :language="language"
       />
     </div>
 

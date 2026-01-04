@@ -13,6 +13,13 @@ import {groups} from "@/groups";
 
 export default {
   name: "RandomButton",
+  props: {
+    language: {
+      type: String,
+      required: false,
+      default: 'en',
+    }
+  },
   methods: {
     activateButton: function () {
       const groupsToInclude = [
@@ -25,12 +32,10 @@ export default {
       const sounds = groups[groupName]['sounds']
       const sound = sounds[Math.floor(Math.random() * sounds.length)];
 
-      playSound(sound, group.extension, group.type)
+      playSound(sound, group.extension, group.type, this.language)
     },
   },
 }
 
 
 </script>
-
-
