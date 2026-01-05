@@ -10,8 +10,6 @@
           </h1>
         </a>
       </div>
-
-      <!-- Language toggle -->
       <language-toggle @language-changed="setLanguage"/>
     </header>
 
@@ -58,21 +56,17 @@ export default {
     // Show only the 'unsorted' group when German is selected; otherwise show all groups
     visibleGroups() {
       if (this.language === 'de') {
-        // keep shape as an object with key 'unsorted' to match v-for usage in template
         return { unsorted: this.groups.unsorted };
       }
       return this.groups;
     }
   },
 
-  // The language state is local for now; switching will be wired to actual sound file selection later.
   methods: {
     setLanguage(lang) {
       this.language = lang;
     },
     onLanguageChange(event) {
-      // v-model already updated `language`; this method kept for side-effects later.
-      // Currently a no-op so language selection is visual only.
       const newLang = event.target.value;
       this.language = newLang;
     }
@@ -83,8 +77,6 @@ function data() {
   return {
     urlPrefix: '/sounds/ee/',
     groups: groups,
-    // default language - visual toggle only at this stage
-    language: 'en',
   };
 }
 </script>

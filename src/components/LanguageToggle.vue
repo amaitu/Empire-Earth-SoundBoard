@@ -23,7 +23,6 @@ export default {
   },
   methods: {
     emitChange() {
-      // keep it visual for now; emit event for future wiring
       this.$emit('language-changed', this.language);
     },
   },
