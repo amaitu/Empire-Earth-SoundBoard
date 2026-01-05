@@ -1,6 +1,5 @@
 import {convertLabelToFileName} from "@/utils/utils.js";
 
-// Add optional `language` parameter (default 'en'). When language is 'de', use the _german folder.
 export function playSound(sound, extension, type, language = 'en') {
     const fileName = sound.filename ? sound.filename : convertLabelToFileName(sound.label)
 
