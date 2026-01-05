@@ -13,24 +13,27 @@ import {groups} from "@/groups";
 
 export default {
   name: "RandomButton",
+  props: {
+    language: {
+      type: String,
+      required: false,
+      default: 'en',
+    }
+  },
   methods: {
     activateButton: function () {
-      const groupsToInclude = [
-        'units',
-        'unsorted',
-      ]
+      // If German is selected, only use the 'unsorted' group (German files are placed under _german/unsorted)
+      const groupsToInclude = this.language === 'de' ? ['unsorted'] : ['units', 'unsorted'];
 
       const groupName = groupsToInclude[Math.floor(Math.random() * groupsToInclude.length)];
       const group = groups[groupName]
       const sounds = groups[groupName]['sounds']
       const sound = sounds[Math.floor(Math.random() * sounds.length)];
 
-      playSound(sound, group.extension, group.type)
+      playSound(sound, group.extension, group.type, this.language)
     },
   },
 }
 
 
 </script>
-
-

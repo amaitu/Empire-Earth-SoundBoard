@@ -9,6 +9,7 @@
                     :sound="sound"
                     :extension="extension"
                     :type="type"
+                    :language="language"
       />
     </div>
   </div>
@@ -55,6 +56,11 @@ export default {
     extension: {
       type: String,
       required: true,
+    },
+    language: {
+      type: String,
+      required: false,
+      default: 'en',
     },
   },
 }

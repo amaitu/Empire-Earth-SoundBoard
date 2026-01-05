@@ -24,6 +24,7 @@ export default {
     'sound',
     'extension',
     'type',
+    'language',
   ],
 
   data() {
@@ -37,7 +38,7 @@ export default {
     activateButton: function () {
       this.playState = PLAY_STATE_ACTIVE;
 
-      playSound(this.sound, this.extension, this.type)
+      playSound(this.sound, this.extension, this.type, this.language)
           .then(() => {
             this.resetButton()
           })
@@ -56,5 +57,3 @@ export default {
   },
 }
 </script>
-
-

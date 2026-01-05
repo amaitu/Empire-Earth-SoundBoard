@@ -1,6 +1,6 @@
 import {convertLabelToFileName} from "@/utils/utils.js";
 
-export function playSound(sound, extension, type) {
+export function playSound(sound, extension, type, language = 'en') {
     const fileName = sound.filename ? sound.filename : convertLabelToFileName(sound.label)
 
     return new Promise(function (resolve, reject) {
@@ -9,6 +9,7 @@ export function playSound(sound, extension, type) {
         audio.autoplay = true;
         audio.onerror = reject;
         audio.onended = resolve;
-        audio.src = `sounds/${type}/${fileName}${extension}`;
+        const prefix = language === 'de' ? '_de' : type;    // The german files are not categorized
+        audio.src = `sounds/${prefix}/${fileName}${extension}`;
     });
 }
