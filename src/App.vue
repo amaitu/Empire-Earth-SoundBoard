@@ -77,6 +77,7 @@ function data() {
   return {
     urlPrefix: '/sounds/ee/',
     groups: groups,
+    language: 'en',
   };
 }
 </script>
