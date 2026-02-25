@@ -8,6 +8,7 @@ export default function Footer() {
 
                 <div className="py-4 space-y-2 text-gray-400 text-xs sm:text-sm">
                     <p>Thanks to <a href="https://github.com/FelberMartin" className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors">Martin Felber</a> for support with German audio files.</p>
+                    <p>Thanks to <a href="https://ee.heavengames.com/downloads/showfile.php?fileid=1978" className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors">Liero</a> for categorising sounds.</p>
                 </div>
 
                 <div className="flex flex-col items-center space-y-4 pt-2 font-medium">
