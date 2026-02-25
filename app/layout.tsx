@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Empire Earth Soundboard",
-  description: "Empire Earth soundboard",
+  description: "Play various sounds from the classic real-time strategy game Empire Earth directly in your browser.",
 };
 
 export default function RootLayout({
