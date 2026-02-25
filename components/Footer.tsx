@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="mt-16 py-8 text-center text-sm bg-black text-gray-200">
             <div className="max-w-3xl mx-auto space-y-4 px-4">
                 <p>
-                    Empire Earth Soundboard is an open-source, fan-made project dedicated to preserving and sharing the iconic voice lines and sound effects from the 2001 classic real-time strategy game, Empire Earth.
+                    Empire Earth Soundboard is an open-source, fan-made project dedicated to preserving and sharing the iconic voice lines and sound effects from the 2001 classic real-time strategy game, Empire Earth. <a href="https://sgbarker.com">By Steve Barker.</a>
                 </p>
 
                 <div className="py-4 space-y-2 text-gray-400 text-xs sm:text-sm">
