@@ -1,0 +1,48 @@
+import type { Metadata } from "next";
+import { Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Sticker from "@/components/Sticker";
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Empire Earth Soundboard",
+  description: "Empire Earth soundboard",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistMono.variable} antialiased`}
+      >
+        <a 
+          href="https://www.gog.com/en/gog-preservation-program" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hidden sm:block absolute top-4 left-4 sm:top-6 sm:left-6 z-50 hover:scale-105 transition-transform duration-200"
+        >
+          <picture>
+            <source srcSet="/images/gog-badge-empire-earth.webp" type="image/webp" />
+            <img 
+              src="/images/gog-badge-empire-earth.png" 
+              alt="Get Empire Earth on GOG" 
+              width={120} 
+              height={40} 
+              className="w-20 sm:w-28 h-auto"
+            />
+          </picture>
+        </a>
+        <Sticker />
+        {children}
+      </body>
+    </html>
+  );
+}

@@ -1,25 +1,11 @@
-# [Empire Earth Soundboard](https://eesoundboard.online/)
+# Empire Earth Soundboard
 
-### A soundboard for the 2001 classic RTS game Empire Earth.
+Play Empire Earth unit sounds in your browser.
 
-### [See the soundboard in action](https://eesoundboard.online/)
+## Running locally
 
-Built with [Vue.js](https://vuejs.org/) and [Tailwind](https://tailwindcss.com/)
-
-## Running the sound board locally:
-    
-### Project setup
-```
-yarn install
+```bash
+npm run dev
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-This command also runs the prerender script, as this can be reduced down to a static site.
+Open [http://localhost:3000](http://localhost:3000).
