@@ -51,7 +51,7 @@ export default function SoundCard({ sound, language, onClickOverride }: { sound:
         <div className="bg-red">
             <button
                 type="button"
-                className="relative overflow-hidden cursor-pointer bg-black opacity-55 hover:opacity-50 rounded border-empire-red border-4 text-white w-32 h-20 xl:w-44 xl:h-28 flex items-center justify-center"
+                className="relative overflow-hidden cursor-pointer bg-black opacity-55 hover:opacity-50 rounded border-empire-red border-4 text-white w-36 h-20 xl:w-44 xl:h-28 flex items-center justify-center"
                 onClick={playSound}
             >
                 {isPlaying && (
