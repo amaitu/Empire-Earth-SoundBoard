@@ -7,9 +7,7 @@ export default function Footer() {
                 </p>
 
                 <div className="py-4 space-y-2 text-gray-400 text-xs sm:text-sm">
-                    {/*<p>Special thanks to <a href="#" className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors">Placeholder Person 1</a> for their help with audio extraction.</p>*/}
-                    {/*<p>Shoutout to <a href="#" className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors">Placeholder Community Member 2</a> for providing localized voice lines.</p>*/}
-                    {/*<p>Inspired by the amazing work of <a href="#" className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors">Placeholder Creator 3</a>.</p>*/}
+                    <p>Thanks to <a href="https://github.com/FelberMartin" className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors">Martin Felber</a> for support with German audio files.</p>
                 </div>
 
                 <div className="flex flex-col items-center space-y-4 pt-2 font-medium">
