@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {
     Collapsible,
     CollapsibleContent,
@@ -18,6 +18,13 @@ interface SoundGroupProps {
 
 export default function SoundGroup({ title, sounds, language }: SoundGroupProps) {
     const [isOpen, setIsOpen] = useState(true)
+    const [isMounted, setIsMounted] = useState(false)
+
+    useEffect(() => {
+        // Delay enabling animations to prevent initial layout shift
+        const timer = setTimeout(() => setIsMounted(true), 50)
+        return () => clearTimeout(timer)
+    }, [])
 
     return (
         <Collapsible
@@ -39,7 +46,7 @@ export default function SoundGroup({ title, sounds, language }: SoundGroupProps)
                 </button>
             </CollapsibleTrigger>
             
-            <CollapsibleContent className="pt-4">
+            <CollapsibleContent className={`pt-4 ${!isMounted ? '[&[data-state=open]]:!animate-none' : ''}`}>
                 <div className="flex flex-wrap justify-center gap-5">
                     {sounds.map(sound => (
                         <SoundCard key={getKey(sound)} sound={sound} language={language} />

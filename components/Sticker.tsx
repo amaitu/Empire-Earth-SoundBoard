@@ -22,7 +22,7 @@ export default function Sticker() {
       target="_blank"
       rel="noopener noreferrer"
       className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50 group hover:scale-105 transition-transform duration-200"
-      aria-label="Contribute to the project"
+      aria-label="Buy EE!"
     >
       <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center rotate-12 group-hover:rotate-6 transition-transform duration-200 drop-shadow-xl">
         <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full text-empire-red-light">

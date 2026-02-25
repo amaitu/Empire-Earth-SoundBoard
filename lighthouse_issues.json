@@ -1,0 +1,689 @@
+[
+  {
+    "id": "first-contentful-paint",
+    "title": "First Contentful Paint",
+    "score": 0.97,
+    "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)."
+  },
+  {
+    "id": "largest-contentful-paint",
+    "title": "Largest Contentful Paint",
+    "score": 0.95,
+    "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)"
+  },
+  {
+    "id": "cumulative-layout-shift",
+    "title": "Cumulative Layout Shift",
+    "score": 0.44,
+    "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+    "details": {
+      "type": "debugdata",
+      "items": [
+        {
+          "cumulativeLayoutShiftMainFrame": 0.27449893060100566,
+          "newEngineResultDiffered": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "errors-in-console",
+    "title": "Browser errors were logged to the console",
+    "score": 0,
+    "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "sourceLocation",
+          "valueType": "source-location",
+          "label": "Source"
+        },
+        {
+          "key": "description",
+          "valueType": "code",
+          "label": "Description"
+        }
+      ],
+      "items": [
+        {
+          "source": "network",
+          "description": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT",
+          "sourceLocation": {
+            "type": "source-location",
+            "url": "https://static.cloudflareinsights.com/beacon.min.js",
+            "urlProvider": "network",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "interactive",
+    "title": "Time to Interactive",
+    "score": 0.89,
+    "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/)."
+  },
+  {
+    "id": "image-aspect-ratio",
+    "title": "Displays images with incorrect aspect ratio",
+    "score": 0,
+    "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/).",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "label": ""
+        },
+        {
+          "key": "url",
+          "valueType": "url",
+          "label": "URL"
+        },
+        {
+          "key": "displayedAspectRatio",
+          "valueType": "text",
+          "label": "Aspect Ratio (Displayed)"
+        },
+        {
+          "key": "actualAspectRatio",
+          "valueType": "text",
+          "label": "Aspect Ratio (Actual)"
+        }
+      ],
+      "items": [
+        {
+          "url": "https://eesoundboard.online/images/gog-badge-empire-earth.webp",
+          "node": {
+            "type": "node",
+            "lhId": "1-13-IMG",
+            "path": "2,HTML,1,BODY,1,A,0,PICTURE,1,IMG",
+            "selector": "body.geist_mono_8d43a2aa-module__8Li5zG__variable > a.hidden > picture > img.w-20",
+            "boundingRect": {
+              "top": 0,
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<img src=\"https://eesoundboard.online/images/gog-badge-empire-earth.webp\" alt=\"Get Empire Earth on GOG\" width=\"120\" height=\"40\" class=\"w-20 sm:w-28 h-auto\">",
+            "nodeLabel": "Get Empire Earth on GOG"
+          },
+          "displayedAspectRatio": "120 x 40\n        (3.00)",
+          "actualAspectRatio": "1480 x 1480\n        (1.00)",
+          "doRatiosMatch": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "layout-shifts",
+    "title": "Avoid large layout shifts",
+    "score": 0,
+    "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "extra"
+          },
+          "label": "Element"
+        },
+        {
+          "key": "score",
+          "valueType": "numeric",
+          "subItemsHeading": {
+            "key": "cause",
+            "valueType": "text"
+          },
+          "granularity": 0.001,
+          "label": "Layout shift score"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "page-4-DIV",
+            "path": "2,HTML,1,BODY,3,DIV,0,MAIN,4,DIV,1,DIV",
+            "selector": "div.min-h-screen > main.pt-5 > div.mt-8 > div.w-full",
+            "boundingRect": {
+              "top": 3284,
+              "bottom": 4178,
+              "left": 24,
+              "right": 388,
+              "width": 364,
+              "height": 894
+            },
+            "snippet": "<div data-state=\"open\" data-slot=\"collapsible\" class=\"w-full space-y-2 border border-ee-red rounded-md p-4 bg-transparent\">",
+            "nodeLabel": "Other / Unknown\nToggle\nA man saying \"galory\"\nRobotic sound\nScary breath sound 1…"
+          },
+          "score": 0.2737439394118133
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "page-0-H1",
+            "path": "2,HTML,1,BODY,3,DIV,0,MAIN,0,HEADER,0,DIV,0,H1",
+            "selector": "main.pt-5 > header > div > h1.md:text-center",
+            "boundingRect": {
+              "top": 20,
+              "bottom": 100,
+              "left": 24,
+              "right": 388,
+              "width": 364,
+              "height": 80
+            },
+            "snippet": "<h1 class=\"md:text-center text-left uppercase stroke tracking-wider text-4xl lg:text-…\">",
+            "nodeLabel": "EMPIRE EARTH\nSOUNDBOARD"
+          },
+          "score": 0.0007549911891923511,
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "extra": {
+                  "type": "url",
+                  "value": "https://eesoundboard.online/fonts/BroadsheetLDOBold.woff2"
+                },
+                "cause": "Web font loaded"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "label-content-name-mismatch",
+    "title": "Elements with visible text labels do not have matching accessible names.",
+    "score": 0,
+    "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-A",
+            "path": "2,HTML,1,BODY,2,A",
+            "selector": "body.geist_mono_8d43a2aa-module__8Li5zG__variable > a.fixed",
+            "boundingRect": {
+              "top": 16,
+              "bottom": 112,
+              "left": 300,
+              "right": 396,
+              "width": 96,
+              "height": 96
+            },
+            "snippet": "<a href=\"https://www.gog.com/en/game/empire_earth_gold_edition\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"fixed top-4 right-4 sm:top-6 sm:right-6 z-50 group hover:scale-105 transit…\" aria-label=\"Contribute to the project\">",
+            "nodeLabel": "BUY\nEE!",
+            "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.semantics",
+          "wcag21a",
+          "wcag253",
+          "EN-301-549",
+          "EN-9.2.5.3",
+          "RGAAv4",
+          "RGAA-6.1.5",
+          "experimental"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cache-insight",
+    "title": "Use efficient cache lifetimes",
+    "score": 0.5,
+    "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache).",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "url",
+          "valueType": "url",
+          "label": "Request"
+        },
+        {
+          "key": "cacheLifetimeMs",
+          "valueType": "ms",
+          "label": "Cache TTL",
+          "displayUnit": "duration"
+        },
+        {
+          "key": "totalBytes",
+          "valueType": "bytes",
+          "label": "Transfer Size",
+          "displayUnit": "kb",
+          "granularity": 1
+        }
+      ],
+      "items": [
+        {
+          "url": "https://eesoundboard.online/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+          "cacheLifetimeMs": 2876000,
+          "totalBytes": 4225,
+          "wastedBytes": 3486.2118055555557
+        }
+      ],
+      "sortedBy": [
+        "wastedBytes"
+      ],
+      "skipSumming": [
+        "cacheLifetimeMs"
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "wastedBytes": 3486.2118055555557
+      }
+    }
+  },
+  {
+    "id": "cls-culprits-insight",
+    "title": "Layout shift culprits",
+    "score": 0,
+    "description": "Layout shifts occur when elements move absent any user interaction. [Investigate the causes of layout shifts](https://developer.chrome.com/docs/performance/insights/cls-culprit), such as elements being added, removed, or their fonts changing as the page loads.",
+    "details": {
+      "type": "list",
+      "items": [
+        {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "extra"
+              },
+              "label": "Element"
+            },
+            {
+              "key": "score",
+              "valueType": "numeric",
+              "subItemsHeading": {
+                "key": "cause",
+                "valueType": "text"
+              },
+              "granularity": 0.001,
+              "label": "Layout shift score"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "text",
+                "value": "Total"
+              },
+              "score": 0.27449893060100566
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-4-DIV",
+                "path": "2,HTML,1,BODY,3,DIV,0,MAIN,4,DIV,1,DIV",
+                "selector": "div.min-h-screen > main.pt-5 > div.mt-8 > div.w-full",
+                "boundingRect": {
+                  "top": 3284,
+                  "bottom": 4178,
+                  "left": 24,
+                  "right": 388,
+                  "width": 364,
+                  "height": 894
+                },
+                "snippet": "<div data-state=\"open\" data-slot=\"collapsible\" class=\"w-full space-y-2 border border-ee-red rounded-md p-4 bg-transparent\">",
+                "nodeLabel": "Other / Unknown\nToggle\nA man saying \"galory\"\nRobotic sound\nScary breath sound 1…"
+              },
+              "score": 0.2737439394118133
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-0-H1",
+                "path": "2,HTML,1,BODY,3,DIV,0,MAIN,0,HEADER,0,DIV,0,H1",
+                "selector": "main.pt-5 > header > div > h1.md:text-center",
+                "boundingRect": {
+                  "top": 20,
+                  "bottom": 100,
+                  "left": 24,
+                  "right": 388,
+                  "width": 364,
+                  "height": 80
+                },
+                "snippet": "<h1 class=\"md:text-center text-left uppercase stroke tracking-wider text-4xl lg:text-…\">",
+                "nodeLabel": "EMPIRE EARTH\nSOUNDBOARD"
+              },
+              "score": 0.0007549911891923511,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "extra": {
+                      "type": "url",
+                      "value": "https://eesoundboard.online/fonts/BroadsheetLDOBold.woff2"
+                    },
+                    "cause": "Web font"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "image-delivery-insight",
+    "title": "Improve image delivery",
+    "score": 0.5,
+    "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "label": ""
+        },
+        {
+          "key": "url",
+          "valueType": "url",
+          "label": "URL",
+          "subItemsHeading": {
+            "key": "reason",
+            "valueType": "text"
+          }
+        },
+        {
+          "key": "totalBytes",
+          "valueType": "bytes",
+          "label": "Resource Size"
+        },
+        {
+          "key": "wastedBytes",
+          "valueType": "bytes",
+          "label": "Est Savings",
+          "subItemsHeading": {
+            "key": "wastedBytes",
+            "valueType": "bytes"
+          }
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "page-28-IMG",
+            "path": "2,HTML,1,BODY,3,DIV,1,FOOTER,0,DIV,2,DIV,1,A,0,PICTURE,1,IMG",
+            "selector": "div.flex > a.hover:scale-105 > picture > img.w-28",
+            "boundingRect": {
+              "top": 45544,
+              "bottom": 45656,
+              "left": 150,
+              "right": 262,
+              "width": 112,
+              "height": 112
+            },
+            "snippet": "<img src=\"https://eesoundboard.online/images/gog-badge-empire-earth.webp\" alt=\"Get Empire Earth on GOG\" width=\"160\" height=\"53\" class=\"w-28 sm:w-36 h-auto\">",
+            "nodeLabel": "Get Empire Earth on GOG"
+          },
+          "url": "https://eesoundboard.online/images/gog-badge-empire-earth.webp",
+          "totalBytes": 72360,
+          "wastedBytes": 70702,
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "reason": "This image file is larger than it needs to be (1480x1480) for its displayed dimensions (224x224). Use responsive images to reduce the image download size.",
+                "wastedBytes": 70702
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "wastedBytes": 70702
+      }
+    }
+  },
+  {
+    "id": "legacy-javascript-insight",
+    "title": "Legacy JavaScript",
+    "score": 0.5,
+    "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "url",
+          "valueType": "url",
+          "subItemsHeading": {
+            "key": "location",
+            "valueType": "source-location"
+          },
+          "label": "URL"
+        },
+        {
+          "key": null,
+          "valueType": "code",
+          "subItemsHeading": {
+            "key": "signal"
+          },
+          "label": ""
+        },
+        {
+          "key": "wastedBytes",
+          "valueType": "bytes",
+          "label": "Wasted bytes"
+        }
+      ],
+      "items": [
+        {
+          "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+          "wastedBytes": 13637,
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "signal": "Array.prototype.at",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 6558
+                }
+              },
+              {
+                "signal": "Array.prototype.flat",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 5946
+                }
+              },
+              {
+                "signal": "Array.prototype.flatMap",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 6059
+                }
+              },
+              {
+                "signal": "Object.fromEntries",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 6435
+                }
+              },
+              {
+                "signal": "Object.hasOwn",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 6693
+                }
+              },
+              {
+                "signal": "String.prototype.trimEnd",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 5688
+                }
+              },
+              {
+                "signal": "String.prototype.trimStart",
+                "location": {
+                  "type": "source-location",
+                  "url": "https://eesoundboard.online/_next/static/chunks/a98fa9273ce8006a.js",
+                  "urlProvider": "network",
+                  "line": 0,
+                  "column": 5603
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "wastedBytes": 13637
+      }
+    }
+  },
+  {
+    "id": "network-dependency-tree-insight",
+    "title": "Network dependency tree",
+    "score": 0,
+    "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+    "details": {
+      "type": "list",
+      "items": [
+        {
+          "type": "list-section",
+          "value": {
+            "type": "network-tree",
+            "chains": {
+              "8EB35B8019855DDE2078C791F9819F24": {
+                "url": "https://eesoundboard.online/",
+                "navStartToEndTime": 62,
+                "transferSize": 11687,
+                "isLongest": true,
+                "children": {
+                  "6839.3": {
+                    "url": "https://eesoundboard.online/_next/static/chunks/b0ded7ea1e52f1b4.css",
+                    "navStartToEndTime": 112,
+                    "transferSize": 9081,
+                    "isLongest": true,
+                    "children": {
+                      "6839.22": {
+                        "url": "https://eesoundboard.online/fonts/BroadsheetLDOBold.woff2",
+                        "navStartToEndTime": 188,
+                        "transferSize": 30447,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "longestChain": {
+              "duration": 188
+            }
+          }
+        },
+        {
+          "type": "list-section",
+          "title": "Preconnected origins",
+          "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+          "value": {
+            "type": "text",
+            "value": "no origins were preconnected"
+          }
+        },
+        {
+          "type": "list-section",
+          "title": "Preconnect candidates",
+          "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+          "value": {
+            "type": "text",
+            "value": "No additional origins are good candidates for preconnecting"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "render-blocking-insight",
+    "title": "Render blocking requests",
+    "score": 0.5,
+    "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "url",
+          "valueType": "url",
+          "label": "URL"
+        },
+        {
+          "key": "totalBytes",
+          "valueType": "bytes",
+          "label": "Transfer Size"
+        },
+        {
+          "key": "wastedMs",
+          "valueType": "timespanMs",
+          "label": "Duration"
+        }
+      ],
+      "items": [
+        {
+          "url": "https://eesoundboard.online/_next/static/chunks/b0ded7ea1e52f1b4.css",
+          "totalBytes": 9081,
+          "wastedMs": 150
+        }
+      ]
+    }
+  }
+]

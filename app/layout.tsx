@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/fonts/BroadsheetLDOBold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
       <body
         className={`${geistMono.variable} antialiased`}
       >
@@ -34,9 +37,9 @@ export default function RootLayout({
             <img 
               src="/images/gog-badge-empire-earth.png" 
               alt="Get Empire Earth on GOG" 
-              width={120} 
-              height={40} 
-              className="w-20 sm:w-28 h-auto"
+              width={148} 
+              height={148} 
+              className="w-20 sm:w-28 h-auto object-contain"
             />
           </picture>
         </a>

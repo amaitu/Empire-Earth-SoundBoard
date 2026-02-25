@@ -57,9 +57,9 @@ export default function Footer() {
                             <img 
                                 src="/images/gog-badge-empire-earth.png" 
                                 alt="Get Empire Earth on GOG" 
-                                width={160} 
-                                height={53} 
-                                className="w-28 sm:w-36 h-auto"
+                                width={148} 
+                                height={148} 
+                                className="w-28 sm:w-36 h-auto object-contain"
                             />
                         </picture>
                     </a>
